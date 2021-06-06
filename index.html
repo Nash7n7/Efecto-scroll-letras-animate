@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Scroll Down</h3>
+    <h2 class="text">Efecto Scroll 7u7r</h2>
+    <section>
+        <h2 class="innerText">Efecto Scroll 7u7r</h2>
+    </section>
+    <div class="container">
+        <h2>Texto de muestra para rellenar xd</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores mollitia sed accusamus aliquam ea quibusdam deserunt repudiandae? Doloribus consequatur dignissimos fugiat asperiores repellendus exercitationem ratione nisi, quis, nostrum earum saepe!. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, cumque tempore odit aspernatur delectus, recusandae enim nostrum rerum sapiente debitis accusamus. Soluta dolor possimus temporibus ex reiciendis sapiente voluptate ea. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis totam fugit dignissimos, eveniet atque illum natus, molestias animi eum sit voluptas necessitatibus eaque assumenda nulla nobis laboriosam consectetur quam cupiditate? <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus harum quae earum architecto debitis laudantium modi laborum officiis explicabo molestiae velit dolorem, id tenetur praesentium reiciendis voluptas illo? Alias, dolores. <br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit expedita aspernatur ea illum corrupti voluptates distinctio nobis ratione provident itaque error dolorem minus, soluta debitis assumenda nam adipisci? Molestiae, odio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius iusto tenetur reprehenderit magnam est vero vel dicta corporis. Officia laudantium ad esse eligendi sapiente dignissimos unde sed dicta vitae natus?
+        </p>
+    </div>
+    <script>
+        let section = document.querySelector('section');
+        let text = document.querySelector('.text');
+        let innerText = document.querySelector('.innerText');
+        window-addEventListener('scroll', function() {
+            let value = window.scrollY;
+            section.style.clipPath = "circle("+ value + "px at center center)";
+            text.style.left = 100 - value / 5 + '%';
+            innerText.style.left = 100 - value / 5 + '%';
+
+        })
+    </script>
+</body>
+</html>
